@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://artifactory.approach.be/artifactory/approach-gradle-plugin-dependency"
+        }
+    }
+    dependencies {
+        classpath("nu.studer:gradle-credentials-plugin:$gradleCredential")
+    }
+}
+
+plugins {
+    id 'java'
+    id 'war'
+    id 'org.sonarqube' version '2.7'
+}
+
+group 'be.approach.infosec'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.1', ext: 'pom'
+}
