@@ -1,12 +1,12 @@
 buildscript {
-    repositories {
+    /*repositories {
         maven {
             url "https://artifactory.approach.be/artifactory/approach-gradle-plugin-dependency"
         }
-    }
-    dependencies {
+    }*/
+    /*dependencies {
         classpath("nu.studer:gradle-credentials-plugin:$gradleCredential")
-    }
+    }*/
 }
 
 plugins {
@@ -24,6 +24,6 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
+/*dependencies {
     testCompile group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.1', ext: 'pom'
-}
+}*/
